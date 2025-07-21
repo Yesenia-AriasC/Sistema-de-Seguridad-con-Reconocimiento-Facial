@@ -14,7 +14,16 @@ Este proyecto implementa un sistema de seguridad en tiempo real basado en **reco
 
 ## Requisitos
 
-Este proyecto usa Python 3 y las siguientes librerías:
+Explica acá lo de el environment
 
-```bash
-pip install opencv-python face_recognition numpy
+## Estructura del proyecto
+
+```
+surveillance_entry_system/
+│
+├── main.py                      # Script principal del sistema
+├── Persona_data.csv             # Datos de las personas (ID, nombre, imagen, etc.)
+├── registro_log.csv             # Registro de entradas exitosas
+├── checkmark.png                # Ícono que se muestra si la persona es reconocida
+├── Persona_imagenes/            # Carpeta con imágenes de las personas autorizadas
+```
