@@ -75,6 +75,7 @@ Para este proyecto utilicé **Python 3.10.0** y creé un entorno virtual en Visu
    pip list
    ```
 
+![](https://raw.githubusercontent.com/Yesenia-AriasC/Sistema-de-Seguridad-con-Reconocimiento-Facial/refs/heads/main/Doc/•%20(py318env)%20(base)%20nayibeyeseniaariascortez%40192%20dlib%20%26%20pip%20list.png)
 
 
 ## Estructura del proyecto
