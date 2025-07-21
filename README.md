@@ -13,7 +13,69 @@ Este proyecto implementa un sistema de seguridad en tiempo real basado en **reco
 
 ## Requisitos
 
-Explica acá lo de el environment
+### ⚙️ Configuración del entorno de trabajo
+
+Para este proyecto utilicé **Python 3.10.0** y creé un entorno virtual en Visual Studio Code. Aquí te explico los pasos que seguí:
+
+1. **Abrir la carpeta del proyecto en Visual Studio Code**
+
+   * Abre la carpeta del proyecto en VS Code.
+   * Luego abre una nueva terminal integrada (puedes guiarte con este video: [Cómo abrir terminal en VS Code](https://www.youtube.com/watch?v=F0V5AbxwzSE)).
+
+2. **Instalar Python 3.10.0** (o usar una versión compatible que ya tengas instalada).
+
+3. **Crear un entorno virtual con Python 3.10**
+   En la terminal, ejecuta:
+
+   ```bash
+   python3.10 -m venv py310env
+   ```
+
+4. **Activar el entorno virtual**
+   En sistemas Unix/MacOS:
+
+   ```bash
+   source py310env/bin/activate
+   ```
+
+   Para verificar que estás usando la versión correcta de Python, puedes ejecutar:
+
+   ```bash
+   python --version
+   ```
+
+5. **Instalar las librerías necesarias**
+
+   ```bash
+   pip install cmake
+   pip install face_recognition
+   ```
+
+   ⚠️ **Nota sobre Dlib:** Esta librería puede presentar errores al instalarla directamente. En mi caso, la instalé manualmente así:
+
+   ```bash
+   git clone https://github.com/davisking/dlib.git
+   cd dlib
+   python setup.py install
+   ```
+
+   Luego, para asegurarme de que quedara bien integrada, también ejecuté:
+
+   ```bash
+   pip install dlib
+   ```
+
+   Esto generó una carpeta llamada `dlib` dentro de mi carpeta del proyecto, y funcionó correctamente.
+
+6. **Verificar librerías instaladas**
+
+   Puedes ver el listado de paquetes instalados con:
+
+   ```bash
+   pip list
+   ```
+
+
 
 ## Estructura del proyecto
 
