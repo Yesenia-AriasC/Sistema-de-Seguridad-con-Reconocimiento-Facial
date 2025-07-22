@@ -151,12 +151,6 @@ ID,Name,Date,Time
 
 
 
-## Vista previa
-
-![Checkmark](checkmark.png)
-
-
-
 ## Créditos
 
 Este proyecto está basado en un código original de código base disponible públicamente en GitHub.
@@ -171,10 +165,6 @@ Modificado con fines de aprendizaje por una estudiante de Estadística de la Uni
 
 
 
-## 📜 Licencia
 
-Este proyecto es de uso académico. Puedes modificarlo libremente para aprendizaje o desarrollo personal.
-
-```
 
 
