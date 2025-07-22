@@ -2,7 +2,7 @@
 
 Este proyecto implementa un sistema de seguridad en tiempo real basado en **reconocimiento facial**, utilizando una cámara web. Cuando una persona autorizada es detectada, el sistema muestra su información y registra su ingreso en un archivo `.csv` solo una vez por día.
 
-![Funcionamiento del sistema](Doc/Funcionamiento.gif)
+<img src="Doc/Funcionamiento.gif" alt="Prueba_sistema" width="500">
 
 ## Características
 
