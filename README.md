@@ -1,3 +1,18 @@
+## 📑 Tabla de contenido
+
+- [Características](#características)
+- [Requisitos](#requisitos)
+  - [⚙️ Configuración del entorno de trabajo](#️-configuración-del-entorno-de-trabajo)
+- [Estructura del proyecto](#estructura-del-proyecto)
+- [Cómo usar](#cómo-usar)
+- [Funcionamiento interno](#funcionamiento-interno)
+- [Ejemplo de `registro_log.csv`](#ejemplo-de-registro_logcsv)
+- [Limitaciones actuales](#limitaciones-actuales)
+- [Posibles mejoras futuras](#posibles-mejoras-futuras)
+- [Créditos](#créditos)
+
+
+
 # 🎥 Sistema de Seguridad con Reconocimiento Facial
 
 Este proyecto implementa un sistema de seguridad en tiempo real basado en **reconocimiento facial**, utilizando una cámara web. Cuando una persona autorizada es detectada, el sistema muestra su información y registra su ingreso en un archivo `.csv` solo una vez por día.
