@@ -1,3 +1,15 @@
+## 📑 Tabla de contenido
+
+- [Abstract](#abstract)
+- [Palabras clave](#palabras-clave)
+- [1. Introducción](#1-introducción)
+- [2. Metodología](#2-metodología)
+- [3. Resultados](#3-resultados)
+- [4. Limitaciones](#4-limitaciones)
+- [5. Conclusiones](#5-conclusiones)
+- [6. Referencias](#6-referencias)
+
+
 
 # Sistema de Control de Acceso con Reconocimiento Facial
 
@@ -32,11 +44,20 @@ Utilizando bibliotecas como `face_recognition` (basada en `dlib`) y `OpenCV`. Se
 
 ## 2. Metodología
 
+- [2.1 Descripción de los datos](#21-descripción-de-los-datos)
+- [2.2 Preparación de datos](#22-preparación-de-datos)
+- [2.3 Codificación de rostros](#23-codificación-de-rostros)
+- [2.4 Detección y reconocimiento](#24-detección-y-reconocimiento)
+- [2.5 Registro de acceso](#25-registro-de-acceso)
+- [2.6 Interfaz visual](#26-interfaz-visual)
+- [Diagrama de flujo](#diagrama-de-flujo)
+
+
 El sistema se estructuró en módulos integrando visión por computador y aprendizaje profundo, usando herramientas open source. La metodología se divide en cinco etapas:
 
 ### 2.1 Descripción de los datos
 
-Se recolectaron imágenes faciales de tres participantes en diferentes condiciones. Cada imagen fue almacenada como `.jpg` y etiquetada.
+Se recolectaron imágenes faciales de tres participantes en diferentes condiciones. Cada imagen fue almacenada como `Nombre_Persona.jpg` y etiquetada.
 
 ### 2.2 Preparación de datos
 
@@ -49,13 +70,14 @@ Las imágenes fueron:
 ### 2.3 Codificación de rostros
 
 Cada rostro se convierte en un vector de 128 dimensiones usando una red neuronal convolucional basada en ResNet-34 (dlib). Este vector representa un embedding facial.
+Sobre la variante de ResNet-34 que usa face_recognition sabemos que tiene 29 filtros y la mitad de los filtros.
 
 ### 2.4 Detección y reconocimiento
 
 En tiempo real:
 
 1. Se detecta el rostro usando HOG  
-2. Se genera su codificación  
+2. Se genera su codificación - encodding usando la variante reducida de ResNet-34
 3. Se compara con vectores conocidos mediante distancia euclidiana  
 4. Si la distancia < 0.6 → Coincidencia positiva
 
@@ -63,7 +85,7 @@ En tiempo real:
 
 Al encontrar coincidencias:
 
-- Se crea o actualiza un archivo `.csv`
+- Se crea o actualiza un archivo `registro_log.csv`
 - Se registra nombre, ID, fecha y hora
 - Un usuario se registra solo una vez al día
 
@@ -74,27 +96,7 @@ Al encontrar coincidencias:
 
 ### Diagrama de flujo
 
-```plaintext
-Inicio
-↓
-Carga de datos e imágenes
-↓
-Inicialización de la cámara
-↓
-Captura de vídeo en tiempo real
-↓
-Reducción y conversión de imagen
-↓
-face_locations
-↓
-face_encodings
-↓
-Comparación con rostros conocidos
-↓
-¿Coincidencia?
-→ Sí → Registrar ingreso → Mostrar UI de éxito
-→ No → Estado de espera
-```
+![Diagrama de flujo](https://raw.githubusercontent.com/Yesenia-AriasC/Sistema-de-Seguridad-con-Reconocimiento-Facial/refs/heads/main/Doc/Flujo.png)
 
 
 ## 3. Resultados
@@ -112,19 +114,11 @@ El sistema resultó ser fluido y efectivo, actualizando correctamente el archivo
 
 ## 4. Limitaciones
 
-* El modelo inicial LBPH + Haarcascade fue reemplazado por CNN + HOG
 * Dependencia de buena iluminación
 * Menor precisión con rostros no frontales
 * Reconoce solo una persona por frame
 * No posee una interfaz gráfica amigable para usuarios no técnicos
 
----
-
-## 5. Conclusiones
-
-Se desarrolló un sistema de control de acceso robusto, preciso y de bajo costo, superando soluciones tradicionales como LBPH y Haarcascade. El sistema es escalable y aplicable en entornos reales. No obstante, su uso en ambientes no controlados requerirá mejoras en robustez y actualización de base de datos.
-
-Este trabajo confirma la utilidad del deep learning para resolver tareas prácticas de reconocimiento facial de forma rápida y sin contacto.
 
 ---
 
