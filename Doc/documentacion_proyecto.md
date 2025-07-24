@@ -130,4 +130,3 @@ El sistema resultó ser fluido y efectivo, actualizando correctamente el archivo
 * **Parkhi et al. (2015):** DeepFace con modelos VGG
 * **Schroff et al. (2015):** FaceNet y pérdida tipo triplete
 
-![](https://raw.githubusercontent.com/Yesenia-AriasC/Sistema-de-Seguridad-con-Reconocimiento-Facial/refs/heads/main/Doc/23072025-2.png)
