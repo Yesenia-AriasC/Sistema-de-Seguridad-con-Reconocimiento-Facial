@@ -1,3 +1,11 @@
+
+
+# 🎥 Sistema de Seguridad con Reconocimiento Facial
+
+Este proyecto implementa un sistema de seguridad en tiempo real basado en **reconocimiento facial**, utilizando una cámara web. Cuando una persona autorizada es detectada, el sistema muestra su información y registra su ingreso en un archivo `.csv` solo una vez por día.
+
+<img src="Doc/Funcionamiento.gif" alt="Prueba_sistema" width="500">
+
 ## 📑 Tabla de contenido
 
 - [Características](#características)
@@ -10,14 +18,8 @@
 - [Limitaciones actuales](#limitaciones-actuales)
 - [Posibles mejoras futuras](#posibles-mejoras-futuras)
 - [Créditos](#créditos)
-
-
-
-# 🎥 Sistema de Seguridad con Reconocimiento Facial
-
-Este proyecto implementa un sistema de seguridad en tiempo real basado en **reconocimiento facial**, utilizando una cámara web. Cuando una persona autorizada es detectada, el sistema muestra su información y registra su ingreso en un archivo `.csv` solo una vez por día.
-
-<img src="Doc/Funcionamiento.gif" alt="Prueba_sistema" width="500">
+  
+---
 
 ## Características
 
@@ -26,7 +28,7 @@ Este proyecto implementa un sistema de seguridad en tiempo real basado en **reco
 - Registro automático del ingreso (ID, nombre, fecha, hora)
 - Interfaz gráfica con OpenCV (UI mínima + ícono de confirmación)
 
----
+
 
 ## Requisitos
 
