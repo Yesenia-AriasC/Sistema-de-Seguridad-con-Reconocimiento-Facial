@@ -137,7 +137,7 @@ python main.py
 * **Registro:** Se escribe una fila en el archivo `registro_log.csv` solo si la persona aún no ha sido registrada ese día.
 * **Interfaz:** OpenCV muestra la cámara, dibuja la UI de escaneo y la tarjeta de perfil con el nombre, ID, especialidad e imagen de la persona.
 
-
+Para más información, clic [aquí](https://github.com/Yesenia-AriasC/Sistema-de-Seguridad-con-Reconocimiento-Facial/blob/main/Doc/documentacion_proyecto.md).
 
 ##  Ejemplo de `registro_log.csv`
 
